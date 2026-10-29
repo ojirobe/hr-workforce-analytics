@@ -1,0 +1,8 @@
+metric,value
+rows,1470
+columns,35
+missing_cells,0
+duplicate_rows,0
+constant_columns,3
+categorical_columns,9
+numeric_columns,26

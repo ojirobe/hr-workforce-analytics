@@ -1,0 +1,9 @@
+feature,test,statistic,degrees_freedom,p_value,effect_size,effect_name,attrition_group_summary,p_value_holm,significant_05
+OverTime,chi-square,87.56429365828768,1.0,8.15842372153832e-21,0.2441,Cramer's V,category rates in SQL/EDA outputs,6.526738977230656e-20,True
+JobRole,chi-square,86.19025367670434,8.0,2.7524816380506575e-15,0.2421,Cramer's V,category rates in SQL/EDA outputs,1.9267371466354602e-14,True
+TotalWorkingYears,Mann-Whitney U,100567.0,,2.3995693647989518e-14,-0.3117,rank-biserial correlation,median left=7.00; stayed=10.00,1.439741618879371e-13,True
+MonthlyIncome,Mann-Whitney U,100620.5,,2.9508309172888725e-14,-0.3113,rank-biserial correlation,median left=3202.00; stayed=5204.00,1.4754154586444361e-13,True
+YearsAtCompany,Mann-Whitney U,102582.0,,2.9161913699564144e-13,-0.2979,rank-biserial correlation,median left=3.00; stayed=6.00,1.1664765479825658e-12,True
+Age,Mann-Whitney U,106859.0,,5.304342075341702e-11,-0.2686,rank-biserial correlation,median left=32.00; stayed=36.00,1.5913026226025106e-10,True
+Department,chi-square,10.79600732241067,2.0,0.004525606574479633,0.0857,Cramer's V,category rates in SQL/EDA outputs,0.004774094054725597,True
+DistanceFromHome,Mann-Whitney U,164225.5,,0.0023870470273627984,0.124,rank-biserial correlation,median left=9.00; stayed=7.00,0.004774094054725597,True

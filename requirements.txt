@@ -6,6 +6,6 @@ statsmodels==0.14.4
 matplotlib==3.9.2
 seaborn==0.13.2
 plotly==5.24.1
-streamlit==1.39.0
+streamlit==1.66.1
 pytest==8.3.3
 

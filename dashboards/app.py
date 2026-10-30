@@ -6,7 +6,10 @@ import streamlit as st
 
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
-DATA_PATH = PROJECT_ROOT / "data" / "raw" / "WA_Fn-UseC_-HR-Employee-Attrition.csv"
+DATA_CANDIDATES = [
+    PROJECT_ROOT / "data" / "processed" / "employee_attrition.csv",
+    PROJECT_ROOT / "data" / "raw" / "WA_Fn-UseC_-HR-Employee-Attrition.csv",
+]
 FEATURE_PATH = PROJECT_ROOT / "reports" / "model_feature_importance.csv"
 
 st.set_page_config(
@@ -18,7 +21,8 @@ st.set_page_config(
 
 @st.cache_data
 def load_data() -> pd.DataFrame:
-    data = pd.read_csv(DATA_PATH)
+    data_path = next(path for path in DATA_CANDIDATES if path.exists())
+    data = pd.read_csv(data_path)
     data["AttritionFlag"] = data["Attrition"].eq("Yes").astype(int)
     return data
 

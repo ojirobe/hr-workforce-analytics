@@ -8,3 +8,8 @@ __pycache__/
 data/processed/
 models/
 data/raw/*.csv
+
+# Tracked synthetic dataset required by the deployed dashboard
+!data/processed/
+data/processed/*
+!data/processed/employee_attrition.csv
